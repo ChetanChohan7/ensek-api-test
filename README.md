@@ -1,10 +1,15 @@
 # ensek-api-test
 ensek api tests
 
-In order to run the tests you open either an IDE and target the base directory and run through the terminal using the following commands:
+In order to run the tests you open either an IDE and target the base directory and run through the terminal, or you can open a terminal within the base directory. You'll need to run the following commands:
+
+npm install 
+npm audit fix
+
+Then in order to run the tests you can run either of the following:
 
 npx codeceptjs run --steps
-npx codeceptjs run --verbose (a complete console output of commands)
+npx codeceptjs run --verbose (a complete console output of commands - useful for debugging)
 npx codeceptjs run --grep "authourisation" --steps (in order to run just the authourisation tests)
 npx codeceptjs run --grep "ordering" --steps (in order to run just the ordering tests)
 
