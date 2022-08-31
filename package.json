@@ -1,0 +1,38 @@
+{
+  "name": "ensek-api-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "codeceptjs run --steps",
+    "eslint": "eslint . --ignore-pattern node_modules/ --ignore-pattern build/ --ignore-pattern coverage/ --fix --cache"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run eslint"
+    }
+  },
+  "author": "Chetan",
+  "devDependencies": {
+    "codeceptjs": "^3.3.4",
+    "eslint": "^5.16.0",
+    "eslint-plugin-codeceptjs": "^1.3.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "husky": "^3.0.1",
+    "mocha-junit-reporter": "^2.0.2"
+  },
+  "dependencies": {
+    "await": "^0.2.6",
+    "html-to-json": "^0.6.0",
+    "html2json": "^1.0.2",
+    "imap": "^0.8.19",
+    "imap-simple": "^4.3.0",
+    "junit-merge": "^2.0.0",
+    "moment": "^2.29.4",
+    "moment-round": "^1.0.1",
+    "playwright": "^1.25.0"
+  }
+}
